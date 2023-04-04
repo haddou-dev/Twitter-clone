@@ -1,11 +1,15 @@
-/** @type {import('tailwindcss').Config} */
+/**
+ * @format
+ * @type {import('tailwindcss').Config}
+ */
+
 module.exports = {
-  content: ['./*html'],
-  darkMode:'class',
+  content: ["./*html"],
+  darkMode: "class",
   theme: {
     extend: {
-      colors:{
-        dim:{
+      colors: {
+        dim: {
           50: "#5F99F7",
           100: "#5F99F7",
           200: "#38444d",
@@ -16,10 +20,12 @@ module.exports = {
           700: "#192734",
           800: "#162d40",
           900: "#15202b",
-        }
-      }
+        },
+      },
+      animation: {
+        "spin-fast": "spin 0.5s linear infinite",
+      },
     },
   },
   plugins: [],
-}
-
+};
